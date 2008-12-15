@@ -1,6 +1,6 @@
 category: Gnome Video
-requires: cygwin evolution-data-server glib2 gnome-vfs2 gtk2-x11 libintl8 libxml2 zlib
+requires: cygwin libtotem-plparser12 libcamel1.2-devel libglib2.0-devel libgtk2.0-devel gettext libxml2-devel zlib
 external-source: totem-pl-parser
-sdesc: "GNOME playlist parser library (runtime)"
+sdesc: "GNOME playlist parser library (development)"
 ldesc: "totem-pl-parser is a simple GObject-based library to parse a 
 host of playlist formats, as well as save those"

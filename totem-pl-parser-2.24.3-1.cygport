@@ -1,0 +1,12 @@
+inherit gnome2
+
+DESCRIPTION="GNOME playlist parser library"
+HOMEPAGE="http://www.gnome.org/projects/totem/"
+
+PKG_NAMES="${PN} libtotem-plparser12 libtotem-plparser-devel"
+libtotem_plparser12_CONTENTS="usr/bin/*-12.dll usr/share/doc/ usr/share/locale/"
+libtotem_plparser_devel_CONTENTS="usr/include/ usr/lib/ usr/share/gtk-doc/"
+
+DIFF_EXCLUDES="*.pc"
+
+CYGCONF_ARGS="--without-hal"

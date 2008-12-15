@@ -1,4 +1,4 @@
 category: Gnome Video
-sdesc: "GNOME playlist parser library (locales, docs)"
+sdesc: "GNOME playlist parser library (sources)"
 ldesc: "totem-pl-parser is a simple GObject-based library to parse a 
 host of playlist formats, as well as save those"
