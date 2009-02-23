@@ -5,11 +5,11 @@ playlist formats, as well as save those.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  libcamel1.2_14-2.24.2-1
-  libglib2.0_0-2.18.3-1
-  libgtk2.0_0-2.14.5-1
+  libcamel1.2_14-2.24.4.1-1
+  libglib2.0_0-2.18.4-1
+  libgtk2.0_0-2.14.7-2
   libintl8-0.17-2
-  libxml2-2.7.2-1
+  libxml2-2.7.3-1
   zlib-1.2.3-2
 
 Build requirements:
@@ -25,7 +25,7 @@ Build requirements:
   gtk-doc-1.11-1
   intltool-0.40.5-1
   libtool-2.2.6a-1
-  make-3.81-1
+  make-3.81-2
   pkg-config-0.23a-2
   sed-4.1.5-2
 
@@ -38,16 +38,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack totem-pl-parser-2.24.3-X-src.tar.bz2
+  unpack totem-pl-parser-2.24.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./totem-pl-parser-2.24.3-X.cygport all
+  cygport ./totem-pl-parser-2.24.4-X.cygport all
 
 This will create:
-  /usr/src/libtotem-plparser-devel-2.24.3-X.tar.bz2
-  /usr/src/libtotem-plparser12-2.24.3-X.tar.bz2
-  /usr/src/totem-pl-parser-2.24.3-X-src.tar.bz2
+  /usr/src/libtotem-plparser-devel-2.24.4-X.tar.bz2
+  /usr/src/libtotem-plparser12-2.24.4-X.tar.bz2
+  /usr/src/totem-pl-parser-2.24.4-X-src.tar.bz2
 
 -------------------------------------------
 
@@ -56,12 +56,12 @@ Files included in the binary packages:
 (libtotem-plparser12)
   /usr/bin/cygtotem-plparser-12.dll
   /usr/bin/cygtotem-plparser-mini-12.dll
-  /usr/share/doc/totem-pl-parser-2.24.3/AUTHORS
-  /usr/share/doc/totem-pl-parser-2.24.3/COPYING.LIB
-  /usr/share/doc/totem-pl-parser-2.24.3/ChangeLog
-  /usr/share/doc/totem-pl-parser-2.24.3/INSTALL
-  /usr/share/doc/totem-pl-parser-2.24.3/NEWS
-  /usr/share/doc/totem-pl-parser-2.24.3/README
+  /usr/share/doc/totem-pl-parser-2.24.4/AUTHORS
+  /usr/share/doc/totem-pl-parser-2.24.4/COPYING.LIB
+  /usr/share/doc/totem-pl-parser-2.24.4/ChangeLog
+  /usr/share/doc/totem-pl-parser-2.24.4/INSTALL
+  /usr/share/doc/totem-pl-parser-2.24.4/NEWS
+  /usr/share/doc/totem-pl-parser-2.24.4/README
   /usr/share/locale/am/LC_MESSAGES/totem-pl-parser.mo
   /usr/share/locale/ar/LC_MESSAGES/totem-pl-parser.mo
   /usr/share/locale/az/LC_MESSAGES/totem-pl-parser.mo
@@ -168,6 +168,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 2.24.4-1 -----
+Version bump.
 
 ----- version 2.24.3-1 -----
 Version bump for GNOME 2.24.
