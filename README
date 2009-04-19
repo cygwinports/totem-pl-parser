@@ -4,29 +4,30 @@ totem-pl-parser is a simple GObject-based library to parse a host of
 playlist formats, as well as save those.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libcamel1.2_14-2.24.4.1-1
-  libglib2.0_0-2.18.4-1
-  libgtk2.0_0-2.14.7-2
-  libintl8-0.17-2
-  libxml2-2.7.3-1
-  zlib-1.2.3-2
+  cygwin-1.7.0-45
+  libcamel1.2_14-2.26.1.1-1
+  libgcc1-4.3.2-2
+  libglib2.0_0-2.20.0-1
+  libgtk2.0_0-2.16.0-1
+  libintl8-0.17-10
+  libxml2-2.7.3-10
+  zlib0-1.2.3-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gettext-devel-0.17-2
-  gnome-common-2.24.0-1
-  gtk-doc-1.11-1
-  intltool-0.40.5-1
-  libtool-2.2.6a-1
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gettext-devel-0.17-10
+  gnome-common-2.26.0-1
+  gtk-doc-1.11-2
+  intltool-0.40.6-1
+  libtool-2.2.7a-12
   make-3.81-2
-  pkg-config-0.23a-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -38,16 +39,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack totem-pl-parser-2.24.4-X-src.tar.bz2
+  unpack totem-pl-parser-2.26.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./totem-pl-parser-2.24.4-X.cygport all
+  cygport ./totem-pl-parser-2.26.1-X.cygport all
 
 This will create:
-  /usr/src/libtotem-plparser-devel-2.24.4-X.tar.bz2
-  /usr/src/libtotem-plparser12-2.24.4-X.tar.bz2
-  /usr/src/totem-pl-parser-2.24.4-X-src.tar.bz2
+  /usr/src/libtotem-plparser-devel-2.26.1-X.tar.bz2
+  /usr/src/libtotem-plparser12-2.26.1-X.tar.bz2
+  /usr/src/totem-pl-parser-2.26.1-X-src.tar.bz2
 
 -------------------------------------------
 
@@ -56,14 +57,14 @@ Files included in the binary packages:
 (libtotem-plparser12)
   /usr/bin/cygtotem-plparser-12.dll
   /usr/bin/cygtotem-plparser-mini-12.dll
-  /usr/share/doc/totem-pl-parser-2.24.4/AUTHORS
-  /usr/share/doc/totem-pl-parser-2.24.4/COPYING.LIB
-  /usr/share/doc/totem-pl-parser-2.24.4/ChangeLog
-  /usr/share/doc/totem-pl-parser-2.24.4/INSTALL
-  /usr/share/doc/totem-pl-parser-2.24.4/NEWS
-  /usr/share/doc/totem-pl-parser-2.24.4/README
+  /usr/share/doc/totem-pl-parser/AUTHORS
+  /usr/share/doc/totem-pl-parser/COPYING.LIB
+  /usr/share/doc/totem-pl-parser/ChangeLog
+  /usr/share/doc/totem-pl-parser/NEWS
+  /usr/share/doc/totem-pl-parser/README
   /usr/share/locale/am/LC_MESSAGES/totem-pl-parser.mo
   /usr/share/locale/ar/LC_MESSAGES/totem-pl-parser.mo
+  /usr/share/locale/as/LC_MESSAGES/totem-pl-parser.mo
   /usr/share/locale/az/LC_MESSAGES/totem-pl-parser.mo
   /usr/share/locale/be/LC_MESSAGES/totem-pl-parser.mo
   /usr/share/locale/be@latin/LC_MESSAGES/totem-pl-parser.mo
@@ -98,6 +99,7 @@ Files included in the binary packages:
   /usr/share/locale/it/LC_MESSAGES/totem-pl-parser.mo
   /usr/share/locale/ja/LC_MESSAGES/totem-pl-parser.mo
   /usr/share/locale/ka/LC_MESSAGES/totem-pl-parser.mo
+  /usr/share/locale/kn/LC_MESSAGES/totem-pl-parser.mo
   /usr/share/locale/ko/LC_MESSAGES/totem-pl-parser.mo
   /usr/share/locale/ku/LC_MESSAGES/totem-pl-parser.mo
   /usr/share/locale/lt/LC_MESSAGES/totem-pl-parser.mo
@@ -115,6 +117,7 @@ Files included in the binary packages:
   /usr/share/locale/or/LC_MESSAGES/totem-pl-parser.mo
   /usr/share/locale/pa/LC_MESSAGES/totem-pl-parser.mo
   /usr/share/locale/pl/LC_MESSAGES/totem-pl-parser.mo
+  /usr/share/locale/ps/LC_MESSAGES/totem-pl-parser.mo
   /usr/share/locale/pt/LC_MESSAGES/totem-pl-parser.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/totem-pl-parser.mo
   /usr/share/locale/ro/LC_MESSAGES/totem-pl-parser.mo
@@ -152,7 +155,10 @@ Files included in the binary packages:
   /usr/lib/libtotem-plparser.la
   /usr/lib/pkgconfig/totem-plparser-mini.pc
   /usr/lib/pkgconfig/totem-plparser.pc
-  /usr/share/gtk-doc/html/totem-pl-parser/ch01.html
+  /usr/share/gtk-doc/html/totem-pl-parser/TotemPlParser.html
+  /usr/share/gtk-doc/html/totem-pl-parser/api-index-deprecated.html
+  /usr/share/gtk-doc/html/totem-pl-parser/api-index-full.html
+  /usr/share/gtk-doc/html/totem-pl-parser/api-reference.html
   /usr/share/gtk-doc/html/totem-pl-parser/home.png
   /usr/share/gtk-doc/html/totem-pl-parser/index.html
   /usr/share/gtk-doc/html/totem-pl-parser/index.sgml
@@ -160,7 +166,6 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/totem-pl-parser/right.png
   /usr/share/gtk-doc/html/totem-pl-parser/style.css
   /usr/share/gtk-doc/html/totem-pl-parser/totem-pl-parser-totem-disc.html
-  /usr/share/gtk-doc/html/totem-pl-parser/totem-pl-parser-totem-pl-parser.html
   /usr/share/gtk-doc/html/totem-pl-parser/totem-pl-parser.devhelp
   /usr/share/gtk-doc/html/totem-pl-parser/totem-pl-parser.devhelp2
   /usr/share/gtk-doc/html/totem-pl-parser/up.png
@@ -169,14 +174,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 2.24.4-1 -----
-Version bump.
-
------ version 2.24.3-1 -----
-Version bump for GNOME 2.24.
-
------ version 2.22.3-1 -----
-Initial release for Cygwin.
+----- version 2.26.1-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
