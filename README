@@ -4,28 +4,28 @@ totem-pl-parser is a simple GObject-based library to parse a host of
 playlist formats, as well as save those.
 
 Runtime requirements:
-  cygwin-1.7.0-45
-  libcamel1.2_14-2.26.1.1-1
-  libgcc1-4.3.2-2
-  libglib2.0_0-2.20.0-1
-  libgtk2.0_0-2.16.0-1
-  libintl8-0.17-10
-  libxml2-2.7.3-10
+  cygwin-1.7.0-62
+  libcamel1.2_14-2.26.3-1
+  libgcc1-4.3.4-1
+  libglib2.0_0-2.20.5-1
+  libgtk2.0_0-2.16.6-1
+  libintl8-0.17-11
+  libxml2-2.7.3-11
   zlib0-1.2.3-10
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
-  binutils-20080624-2
-  cygport-0.9.6-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  gettext-devel-0.17-10
-  gnome-common-2.26.0-1
+  automake1.10-1.10.2-10
+  binutils-2.19.51-1
+  cygport-0.9.9-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-1
+  gettext-devel-0.17-11
+  gnome-common-2.26.0-2
   gtk-doc-1.11-2
   intltool-0.40.6-1
-  libtool-2.2.7a-12
+  libtool-2.2.7a-14
   make-3.81-2
   pkg-config-0.23b-10
   sed-4.1.5-2
@@ -39,140 +39,23 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack totem-pl-parser-2.26.1-X-src.tar.bz2
+  unpack totem-pl-parser-2.26.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./totem-pl-parser-2.26.1-X.cygport all
+  cygport ./totem-pl-parser-2.26.3-X.cygport all
 
 This will create:
-  /usr/src/libtotem-plparser-devel-2.26.1-X.tar.bz2
-  /usr/src/libtotem-plparser12-2.26.1-X.tar.bz2
-  /usr/src/totem-pl-parser-2.26.1-X-src.tar.bz2
+  /usr/src/libtotem-plparser-devel-2.26.3-X.tar.bz2
+  /usr/src/libtotem-plparser12-2.26.3-X.tar.bz2
+  /usr/src/totem-pl-parser-2.26.3-X-src.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary packages:
-
-(libtotem-plparser12)
-  /usr/bin/cygtotem-plparser-12.dll
-  /usr/bin/cygtotem-plparser-mini-12.dll
-  /usr/share/doc/totem-pl-parser/AUTHORS
-  /usr/share/doc/totem-pl-parser/COPYING.LIB
-  /usr/share/doc/totem-pl-parser/ChangeLog
-  /usr/share/doc/totem-pl-parser/NEWS
-  /usr/share/doc/totem-pl-parser/README
-  /usr/share/locale/am/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/ar/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/as/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/az/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/be/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/be@latin/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/bg/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/bn/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/bn_IN/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/br/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/ca/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/cs/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/cy/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/da/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/de/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/dz/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/el/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/en_CA/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/en_GB/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/es/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/et/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/eu/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/fa/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/fi/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/fr/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/ga/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/gl/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/gu/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/he/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/hi/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/hr/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/hu/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/id/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/is/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/it/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/ja/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/ka/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/kn/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/ko/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/ku/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/lt/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/lv/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/mg/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/mk/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/ml/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/mr/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/ms/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/nb/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/ne/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/nl/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/nn/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/oc/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/or/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/pa/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/pl/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/ps/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/pt/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/pt_BR/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/ro/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/ru/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/rw/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/si/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/sk/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/sl/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/sq/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/sr/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/sr@latin/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/sv/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/ta/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/te/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/th/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/tr/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/ug/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/uk/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/vi/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/wa/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/xh/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/zh_CN/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/zh_HK/LC_MESSAGES/totem-pl-parser.mo
-  /usr/share/locale/zh_TW/LC_MESSAGES/totem-pl-parser.mo
-
-(libtotem-plparser-devel)
-  /usr/include/totem-pl-parser/1/plparser/totem-disc.h
-  /usr/include/totem-pl-parser/1/plparser/totem-pl-parser-builtins.h
-  /usr/include/totem-pl-parser/1/plparser/totem-pl-parser-features.h
-  /usr/include/totem-pl-parser/1/plparser/totem-pl-parser-mini.h
-  /usr/include/totem-pl-parser/1/plparser/totem-pl-parser.h
-  /usr/lib/libtotem-plparser-mini.dll.a
-  /usr/lib/libtotem-plparser-mini.la
-  /usr/lib/libtotem-plparser.dll.a
-  /usr/lib/libtotem-plparser.la
-  /usr/lib/pkgconfig/totem-plparser-mini.pc
-  /usr/lib/pkgconfig/totem-plparser.pc
-  /usr/share/gtk-doc/html/totem-pl-parser/TotemPlParser.html
-  /usr/share/gtk-doc/html/totem-pl-parser/api-index-deprecated.html
-  /usr/share/gtk-doc/html/totem-pl-parser/api-index-full.html
-  /usr/share/gtk-doc/html/totem-pl-parser/api-reference.html
-  /usr/share/gtk-doc/html/totem-pl-parser/home.png
-  /usr/share/gtk-doc/html/totem-pl-parser/index.html
-  /usr/share/gtk-doc/html/totem-pl-parser/index.sgml
-  /usr/share/gtk-doc/html/totem-pl-parser/left.png
-  /usr/share/gtk-doc/html/totem-pl-parser/right.png
-  /usr/share/gtk-doc/html/totem-pl-parser/style.css
-  /usr/share/gtk-doc/html/totem-pl-parser/totem-pl-parser-totem-disc.html
-  /usr/share/gtk-doc/html/totem-pl-parser/totem-pl-parser.devhelp
-  /usr/share/gtk-doc/html/totem-pl-parser/totem-pl-parser.devhelp2
-  /usr/share/gtk-doc/html/totem-pl-parser/up.png
-
-------------------
-
 Port Notes:
+
+----- version 2.26.3-1 -----
+Version bump.
 
 ----- version 2.26.1-1 -----
 Initial release for Cygwin 1.7.
