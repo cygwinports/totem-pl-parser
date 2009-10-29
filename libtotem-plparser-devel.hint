@@ -1,5 +1,5 @@
 category: Gnome Video
-requires: libtotem-plparser12 libcamel1.2-devel libglib2.0-devel libgtk2.0-devel gettext libxml2-devel zlib-devel
+requires: libtotem-plparser12 libglib2.0-devel libgmime2.4-devel libgtk2.0-devel gettext libxml2-devel zlib-devel
 external-source: totem-pl-parser
 sdesc: "GNOME playlist parser library (development)"
 ldesc: "totem-pl-parser is a simple GObject-based library to parse a 
