@@ -1,5 +1,5 @@
 category: Gnome Video
-requires: libtotem-plparser12 girepository-GLib2.0 girepository-Gtk2.0 girepository-x11
+requires: libtotem-plparser17 girepository-GLib2.0 girepository-Gtk2.0 girepository-x11
 external-source: totem-pl-parser
 sdesc: "GNOME playlist parser library (GObject Introspection data)"
 ldesc: "totem-pl-parser is a simple GObject-based library to parse a 
