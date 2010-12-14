@@ -3,7 +3,7 @@ inherit gnome2
 DESCRIPTION="GNOME playlist parser library"
 HOMEPAGE="http://www.gnome.org/projects/totem/"
 
-PKG_NAMES="${PN} libtotem-plparser17 libtotem-plparser-common libtotem-plparser-devel girepository-TotemPlParser1.0"
+PKG_NAMES="libtotem-plparser17 libtotem-plparser-common libtotem-plparser-devel girepository-TotemPlParser1.0"
 libtotem_plparser17_CONTENTS="usr/bin/*-17.dll"
 libtotem_plparser_common_CONTENTS="usr/share/doc/ usr/share/locale/"
 libtotem_plparser_devel_CONTENTS="--exclude=gir* usr/include/ usr/lib/ usr/share/gtk-doc/"
