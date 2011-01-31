@@ -1,0 +1,11 @@
+--- origsrc/totem-pl-parser-2.32.2/configure.in	2011-01-28 09:34:00.000000000 -0600
++++ src/totem-pl-parser-2.32.2/configure.in	2011-01-30 18:58:25.080647300 -0600
+@@ -40,7 +40,7 @@ AC_PATH_PROG([GLIB_MKENUMS],[glib-mkenum
+ # Requirements
+ GLIB_REQS=2.21.6
+ GIO_REQS=2.24.0
+-QUVI_REQS=2.11
++QUVI_REQS=0.2.11
+ 
+ # Before making a release, the PLPARSER_LT_VERSION string should be modified.
+ # The string is of the form C:R:A.

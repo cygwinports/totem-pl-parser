@@ -1,5 +1,5 @@
 category: Gnome Video
-requires: libtotem-plparser-common libglib2.0_0 libgmime2.4_2 libintl8 libsoup2.4_1 libsoup-gnome2.4_1 libxml2
+requires: libtotem-plparser-common libglib2.0_0 libgmime2.4_2 libintl8 libquvi0 libsoup2.4_1 libsoup-gnome2.4_1 libxml2
 external-source: totem-pl-parser
 sdesc: "GNOME playlist parser library (runtime)"
 ldesc: "totem-pl-parser is a simple GObject-based library to parse a 
