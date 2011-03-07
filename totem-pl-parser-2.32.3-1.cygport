@@ -3,11 +3,6 @@ inherit gnome2
 DESCRIPTION="GNOME playlist parser library"
 HOMEPAGE="http://www.gnome.org/projects/totem/"
 
-PATCH_URI="
-	2.32.2-libquvi-dep.patch
-	2.32.2-no-undefined.patch
-"
-
 PKG_NAMES="libtotem-plparser17 libtotem-plparser-common libtotem-plparser-devel girepository-TotemPlParser1.0"
 libtotem_plparser17_CONTENTS="usr/bin/*-17.dll"
 libtotem_plparser_common_CONTENTS="usr/share/doc/ usr/share/locale/"
@@ -16,4 +11,4 @@ girepository_TotemPlParser1_0_CONTENTS="usr/*/gir*/TotemPlParser-1.0.*"
 
 DIFF_EXCLUDES="*.pc"
 
-CYGCONF_ARGS="--without-hal"
+CYGCONF_ARGS="--without-hal --disable-quvi"
