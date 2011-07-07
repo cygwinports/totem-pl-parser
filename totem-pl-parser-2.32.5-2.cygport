@@ -11,4 +11,4 @@ girepository_TotemPlParser1_0_CONTENTS="usr/*/gir*/TotemPlParser-1.0.*"
 
 DIFF_EXCLUDES="*.pc"
 
-CYGCONF_ARGS="--without-hal --disable-quvi"
+CYGCONF_ARGS="--without-hal"
