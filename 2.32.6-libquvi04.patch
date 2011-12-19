@@ -1,0 +1,24 @@
+Already fixed upstream for 2.32.7
+
+--- origsrc/totem-pl-parser-2.32.6/plparse/totem-pl-parser-videosite.c	2011-08-30 05:21:35.000000000 -0500
++++ src/totem-pl-parser-2.32.6/plparse/totem-pl-parser-videosite.c	2011-12-19 02:16:51.543637000 -0600
+@@ -75,7 +75,7 @@ totem_pl_parser_add_videosite (TotemPlPa
+ #ifdef HAVE_QUVI
+ 	QUVIcode rc;
+ 	quvi_t handle;
+-	quvi_video_t v;
++	quvi_media_t v;
+ 	char *uri;
+ 	/* properties */
+ 	const char *video_uri;
+@@ -104,8 +104,8 @@ totem_pl_parser_add_videosite (TotemPlPa
+ 		return TOTEM_PL_PARSER_RESULT_ERROR;
+ 	}
+ 
+-	getprop (QUVIPROP_VIDEOURL, video_uri);
+-	if (quvi_getprop (v, QUVIPROP_VIDEOFILELENGTH, &length) == QUVI_OK)
++	getprop (QUVIPROP_MEDIAURL, video_uri);
++	if (quvi_getprop (v, QUVIPROP_MEDIACONTENTLENGTH, &length) == QUVI_OK)
+ 		length_str = g_strdup_printf ("%f", length);
+ 	else
+ 		length_str = NULL;
