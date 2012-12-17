@@ -1,6 +1,0 @@
-category: Gnome Video
-requires: 
-external-source: totem-pl-parser
-sdesc: "GNOME playlist parser library (data)"
-ldesc: "totem-pl-parser is a simple GObject-based library to parse a 
-host of playlist formats, as well as save those"
