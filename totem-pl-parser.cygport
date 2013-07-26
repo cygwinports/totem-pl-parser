@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="totem-pl-parser"
-VERSION=3.4.3
+VERSION=3.4.5
 RELEASE=1
 CATEGORY="GNOME"
 SUMMARY="GNOME playlist parser library"
@@ -9,8 +9,7 @@ DESCRIPTION="totem-pl-parser is a simple GObject-based library to parse a
 host of playlist formats, as well as save those"
 HOMEPAGE="http://www.gnome.org/projects/totem/"
 
-PATCH_URI="3.4.1-gmime26.patch
-           3.4.1-export-symbols.patch"
+PATCH_URI="3.4.1-export-symbols.patch"
 
 PKG_NAMES="libtotem-plparser17 libtotem-plparser-common libtotem-plparser-devel girepository-TotemPlParser1.0"
 libtotem_plparser17_REQUIRES="libtotem-plparser-common"
