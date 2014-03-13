@@ -1,21 +1,25 @@
 inherit gnome2
 
 NAME="totem-pl-parser"
-VERSION=3.4.5
+VERSION=3.10.1
 RELEASE=1
-CATEGORY="GNOME"
+CATEGORY="Libs"
 SUMMARY="GNOME playlist parser library"
 DESCRIPTION="totem-pl-parser is a simple GObject-based library to parse a
 host of playlist formats, as well as save those"
 HOMEPAGE="http://www.gnome.org/projects/totem/"
 
-PATCH_URI="3.4.1-export-symbols.patch"
+PATCH_URI="3.10.1-export-symbols.patch"
 
-PKG_NAMES="libtotem-plparser17 libtotem-plparser-common libtotem-plparser-devel girepository-TotemPlParser1.0"
-libtotem_plparser17_REQUIRES="libtotem-plparser-common"
-libtotem_plparser17_CONTENTS="usr/bin/*-17.dll"
-libtotem_plparser_common_CONTENTS="usr/share/doc/ usr/share/locale/"
-libtotem_plparser_devel_CONTENTS="--exclude=gir* usr/include/ usr/lib/ usr/share/gtk-doc/"
+PKG_NAMES="libtotem-plparser18 libtotem-plparser-common libtotem-plparser-devel
+           libtotem-plparser-doc girepository-TotemPlParser1.0"
+libtotem_plparser18_REQUIRES="libtotem-plparser-common"
+libtotem_plparser18_CONTENTS="usr/bin/*-18.dll"
+# FIXME: -common is usually noarch
+libtotem_plparser_common_CONTENTS="usr/libexec/ usr/share/doc/ usr/share/locale/"
+libtotem_plparser_devel_CONTENTS="--exclude=gir* usr/include/ usr/lib/"
+libtotem_plparser_doc_CATEGORY="Doc"
+libtotem_plparser_doc_CONTENTS="usr/share/gtk-doc/"
 girepository_TotemPlParser1_0_CONTENTS="usr/*/gir*/TotemPlParser-1.0.*"
 
 DIFF_EXCLUDES="*.pc"
