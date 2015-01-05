@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="totem-pl-parser"
-VERSION=3.10.2
+VERSION=3.10.3
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME playlist parser library"
