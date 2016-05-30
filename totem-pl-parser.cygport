@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="totem-pl-parser"
-VERSION=3.10.5
+VERSION=3.10.6
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME playlist parser library"
@@ -16,6 +16,7 @@ PKG_NAMES="libtotem-plparser18 libtotem-plparser-common libtotem-plparser-devel
 libtotem_plparser18_REQUIRES="libtotem-plparser-common"
 libtotem_plparser18_CONTENTS="usr/bin/*-18.dll usr/libexec/${NAME}-${VERSION}"
 libtotem_plparser_common_CONTENTS="usr/share/doc/ usr/share/locale/"
+libtotem_plparser_devel_REQUIRES="girepository-TotemPlParser1.0"
 libtotem_plparser_devel_CONTENTS="--exclude=gir* usr/include/ usr/lib/"
 libtotem_plparser_doc_CATEGORY="Doc"
 libtotem_plparser_doc_CONTENTS="usr/share/gtk-doc/"
