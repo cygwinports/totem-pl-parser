@@ -1,7 +1,7 @@
-inherit gnome2
+inherit gnome.org meson
 
 NAME="totem-pl-parser"
-VERSION=3.10.8
+VERSION=3.26.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME playlist parser library"
@@ -9,12 +9,10 @@ DESCRIPTION="totem-pl-parser is a simple GObject-based library to parse a
 host of playlist formats, as well as save those"
 HOMEPAGE="http://www.gnome.org/projects/totem/"
 
-PATCH_URI="3.10.1-export-symbols.patch"
-
 PKG_NAMES="libtotem-plparser18 libtotem-plparser-common libtotem-plparser-devel
            libtotem-plparser-doc girepository-TotemPlParser1.0"
 libtotem_plparser18_REQUIRES="libtotem-plparser-common"
-libtotem_plparser18_CONTENTS="usr/bin/*-18.dll usr/libexec/${NAME}-${VERSION}"
+libtotem_plparser18_CONTENTS="usr/bin/*-18.dll usr/libexec/${NAME}"
 libtotem_plparser_common_CONTENTS="usr/share/doc/ usr/share/locale/"
 libtotem_plparser_devel_REQUIRES="girepository-TotemPlParser1.0"
 libtotem_plparser_devel_CONTENTS="--exclude=gir* usr/include/ usr/lib/"
@@ -24,4 +22,9 @@ girepository_TotemPlParser1_0_CONTENTS="usr/*/gir*/TotemPlParser-1.0.*"
 
 DIFF_EXCLUDES="*.pc"
 
-CYGCONF_ARGS="--libexecdir=/usr/libexec/${NAME}-${VERSION} --without-hal"
+CYGMESON_ARGS="
+	-Denable-quvi=yes
+	-Denable-libarchive=yes
+	-Denable-libgcrypt=yes
+	-Denable-gtk-doc=true
+"
